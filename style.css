@@ -16,6 +16,9 @@ a{
 }
 
 
+
+
+
 .img-box img{
     width: 100%;
  }
@@ -111,6 +114,11 @@ header > nav > div.logo > .title > .univ-name{
     transform: translateX(-2px);
 }
 
+header > nav > div.logo > .title > .univ-name.mb{
+    font-size: 18px;
+    color: #262626;
+}
+
 header > nav > ul.menu > li{
     margin: 0 12px;
     font-weight: 600;
@@ -133,13 +141,144 @@ header > nav > ul.menu > li.active::after{
     background: #c62917;
 }
 
-header > nav > ul.menu > li{}
-
 header > nav > ul.menu > li:hover{
     color: #c62917;
+}
+
+header > nav > div.my-info > div.btn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+    margin-right: 5px;
+    border-radius: 10px;
+
+}
+
+header > nav > div.my-info > div.btn > a{
+    padding: 10px;
+}
+
+header > nav > div.my-info > div.btn:last-child{
+    margin:0;
+}
+
+header > nav > div.my-info > div.btn img{
+    width: 100%;
+    height: auto;
+}
+
+header > nav > div.search-btn{
+    font-size: 13px;
+    color: #c62917;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+header > nav .menu-btn{
+    width: 56px;
+}
+
+header > nav .menu-btn > a{
+    padding: 6px 0;
+}
+
+header > nav .menu-btn span{
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #c62917;    
+}
+
+header > nav .menu-btn span:last-child{
+    top: unset;
+    bottom: 0;
 }
 
 section > div.text{
     margin-top: 80px;
     background: #f1f1f1;
 }
+
+/* pc */
+@media (min-width: 641px){
+    .mb{
+        display: none;
+    }
+}
+
+/* mb */
+@media (max-width: 640px){
+
+    .pc{
+        display: none;
+    }
+
+
+    header{
+        height: 50px;
+        box-shadow: 0px 0px 7px rgba(0,0,0,0.25);
+    }
+
+    header > nav{
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    header > nav > div.logo > .title{
+        flex-direction: row;
+        padding: 0;
+    }
+
+    div#search-bar{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+
+    div#search-bar.active{
+        display: block;
+    }
+
+    div#search-bar > form.search{
+        height: 100%;
+        position: relative;
+    }
+
+    div#search-bar input{
+        outline: none;
+        
+        border: 2px solid #d6d6d6;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    div#search-bar > form.search::after{
+        display: block;
+        content: "\f002";
+        color: #cccccc;
+        font-size: 1.4em;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;    
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+
+    section > div.text{
+        margin-top: 50px;
+    }
+
+
+}
+

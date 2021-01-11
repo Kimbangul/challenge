@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>challenge01</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <nav class="flex flex-jc-b">
+
             <div class="logo flex flex-ai-c">
-                <div class="img-box"><a href="#"><img src="https://everytime.kr/images/new/nav.logo.png" alt="logo"></a></div>
+                <div class="img-box pc"><a href="#"><img src="https://everytime.kr/images/new/nav.logo.png" alt="logo"></a></div>
                 <div class="title flex flex-d-c">
-                    <div class="everytime">에브리타임</div>
-                    <div class="univ-name">홍익대 세종캠</div>
+                    <div class="everytime pc">에브리타임</div>
+                    <div class="univ-name pc">홍익대 세종캠</div>
+                    <div class="menu-btn flex flex-jc-c mb">
+                        <a class="flex flex-d-c flex-jc-b" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="univ-name mb">홍익대 세종캠 에브리타임</div>
                 </div>
             </div>
 
-            <ul class="menu flex flex-1-0-0 flex-jc-c">
+
+
+            <ul class="menu pc flex flex-1-0-0 flex-jc-c">
                 <li class="flex active"><a class="flex flex-ai-c" href="#">게시판</a></li>
                 <li class="flex"><a class="flex flex-ai-c" href="#">시간표</a></li>
                 <li class="flex"><a class="flex flex-ai-c" href="#">강의평가</a></li>
@@ -27,10 +42,22 @@
                 <li class="flex"><a class="flex flex-ai-c" href="#">캠퍼스픽</a></li>
             </ul>
 
-            <div class="my-info">
-                <div class="btn message"><a href="#" title="쪽지함"><img src="https://everytime.kr/images/nav.account.message.png" alt="msg"></a></div>
-                <div class="btn info"><a href="#" title="내 정보"><img src="https://everytime.kr/images/nav.account.my.png" alt="info"></a></div>
+            <div class="my-info flex flex-ai-c pc">
+                <div class="btn message flex"><a class="flex flex-ai-c" href="#" title="쪽지함"><img src="https://everytime.kr/images/nav.account.message.png" alt="msg"></a></div>
+                <div class="btn info flex"><a class="flex flex-ai-c" href="#" title="내 정보"><img src="https://everytime.kr/images/nav.account.my.png" alt="info"></a></div>
             </div>
+
+            <div class="search-btn mb flex flex-ai-c">
+               글 검색
+
+               <div id="search-bar">
+                   <form class="search">
+                        <input type="text" placeholder="전체 게시판의 글을 검색하세요!">                        
+                   </form>
+                    
+               </div>
+            </div>
+           
 
         </nav>
     </header>
